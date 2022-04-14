@@ -23,6 +23,20 @@ The 4 cameras are located on two sides of the cavity (positive and negative 'z')
 details are available from the Reut Elfassi (Kramer) thesis. 
 
 
+
+## Processing with OpenPTV
+
+1. Install PyPTV as explained in the OpenPTV documentation, see https://www.openptv.net
+2. Run PyPTV using `pyptv test_cavity_myptv`
+3. Follow the Youtube tutorial, links are on the OpenPTV documentation 
+## Processing with MyPTV
+1. Following the `user_manual.pdf` instructions from https://github.com/ronshnapp/myptv/releases: we copied `workflow.py` and `params_file.yml` to this directory and modified accordingly
+2. Modifying `params_file.yml`:
+    - renamed all `Calibration` to `cal`
+    - renamed target file 
+    - creating `cal_points1_full` (which is a combination of our `man_ori.par` and `man_ori.dat`, but with 6 points instead of 4) done manually, using `matplotlib`, see the `create_6_points.ipynb`
+    - run `python workflow.py params_file.yml match_target_file` 
+
 ## License
 
 `BY-SA` – [Attribution-ShareAlike](https://github.com/idleberg/Creative-Commons-Markdown/blob/master/4.0/by-sa.markdown)
