@@ -197,8 +197,6 @@ class workflow(object):
         cal_image = self.get_param('calibration', 'calibration_image')
         res = self.get_param('calibration', 'resolution').split(',')
         res = (float(res[0]), float(res[1]))
-
-        print(cam_name, blob_file, cal_image, res)
         
         
         # checking that a camera file in the working directory
@@ -260,6 +258,7 @@ class workflow(object):
             print('Generating a new empty file and leaving calib. sequence.')
             print('To continue calibration, fill in an initial guess in the')
             print('empty file, and then run again the calibration sequence.')
+            cam = camera(cam_name, res)
             cam.save('.')
             print('\n', 'Done.')
     
