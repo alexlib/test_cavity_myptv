@@ -5,8 +5,8 @@ for the OpenPTV software (www.openptv.net)
 
 ## How to use it
 
-    git clone https://github.com/openptv/test_cavity
-    python pyptv_gui.py test_cavity
+    git clone https://github.com/alexlib/test_cavity_myptv
+    python workflow.py <YAML> <COMMAND>
     
 
 ## Source of this data and credits
