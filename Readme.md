@@ -30,8 +30,21 @@ details are available from the Reut Elfassi (Kramer) thesis.
 2. Run PyPTV using `pyptv test_cavity_myptv`
 3. Follow the Youtube tutorial, links are on the OpenPTV documentation 
 ## Processing with MyPTV
-1. Following the `user_manual.pdf` instructions from https://github.com/ronshnapp/myptv/releases: we copied `workflow.py` and `params_file.yml` to this directory and modified accordingly
-2. Modifying `params_file.yml`:
+
+1. install an updated MyPTV version in your virtual environment and copy `worflow.py`
+
+        conda create -n myptv python=3.9 -y
+        conda activate myptv
+        git clone git+https://github.com/ronshnapp/myptv
+        pip install myptv/setup.py -e . 
+
+2. Following the `user_manual.pdf` instructions from https://github.com/ronshnapp/myptv/releases:
+    we better use the file inside the Git preserved folder and not it's copy:
+
+        cd example
+        python ../myptv/example/workflow.py calibrate_cam1.yml calibration
+
+3. Modifying `params_file.yml`:
     - renamed all `Calibration` to `cal`
     - renamed target file 
     - creating `cal_points1_full` (which is a combination of our `man_ori.par` and `man_ori.dat`, but with 6 points instead of 4) done manually, using `matplotlib`, see the `create_6_points.ipynb`
