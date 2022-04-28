@@ -1,6 +1,6 @@
 - calibration:
     camera_name: cam2.ori
-    calibration_points_file: Calibration/6points_cam2
+    calibration_points_file: Calibration/blobs_cal2 #6points_cam2
     target_file: Calibration/target_on_a_side
     segmented_points_file: Calibration/blobs_cal2
     calibration_image: Calibration/cam2.tif
