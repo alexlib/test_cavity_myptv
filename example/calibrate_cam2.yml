@@ -1,8 +1,8 @@
 - calibration:
-    camera_name: Calibration/cam2.ori
+    camera_name: cam2.ori
     calibration_points_file: Calibration/6points_cam2
-    target_file: Calibration/target_file.csv
-    segmented_points_file: Calibration/cam2_blobs.csv
-    calibration_image: Calibration/cal2.tif
+    target_file: Calibration/target_on_a_side
+    segmented_points_file: Calibration/blobs_cal2
+    calibration_image: Calibration/cam2.tif
     resolution: 1280, 1024
 
