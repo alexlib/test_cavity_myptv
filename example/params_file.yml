@@ -27,11 +27,11 @@
 
 - matching:
     blob_files: blobs_cam1, blobs_cam2, blobs_cam3, blobs_cam4
-    N_frames: 5
-    camera_names: cam1.ori, cam2.ori, cam3.ori, cam4.ori
+    N_frames: None
+    camera_names: cam1, cam2, cam3, cam4
     cam_resolution: 1280, 1024
     ROI: -40.0, 30.0, -35.0, 50.0, -15.0, 15.0
-    voxel_size: 2.0
+    voxel_size: 10.0
     max_blob_distance: 1.0
     max_err: 0.2
     save_name: particles
