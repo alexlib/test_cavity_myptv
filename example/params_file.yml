@@ -30,7 +30,7 @@
     N_frames: None
     camera_names: cam1, cam2, cam3, cam4
     cam_resolution: 1280, 1024
-    ROI: -40.0, 30.0, -35.0, 50.0, -15.0, 15.0
+    ROI: 0.0, 70.0, 0.0, 70.0, -25.0, 15.0
     voxel_size: 10.0
     max_blob_distance: 1.0
     max_err: 0.2
