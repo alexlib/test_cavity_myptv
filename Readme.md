@@ -50,6 +50,37 @@ details are available from the Reut Elfassi (Kramer) thesis.
     - creating `cal_points1_full` (which is a combination of our `man_ori.par` and `man_ori.dat`, but with 6 points instead of 4) done manually, using `matplotlib`, see the `create_6_points.ipynb`
     - run `python workflow.py params_file.yml match_target_file` 
 
+4. Calibration:
+    a) creting initial files: cam.ori: run the code without cam.ori file present
+
+    python ../myptv/example/workflow.py .\calibration_cam1.yml calibration
+
+    b) run again without the 6points_cal1 present - you get the GUI to pick 6 points
+       pick and type the 3D coordinates - quite smart and faster probably then openptv. 
+
+    c) run on 6 points file, tune the calibration to 1 - 2 pixels
+
+
+
+5. Segmentation of the calibration target file
+
+    python ../myptv/example/workflow.py .\calibration_cam1.yml segmentation
+
+6. Match target
+
+    python ../myptv/example/workflow.py .\calibration_cam1.yml match_target_file
+
+7. calibration again, replace the `6points_cal1` by `blobs_cal1`
+    - using `blobs_cal1` you should get about .5 pixel
+
+8. Segmentation (had to rename all files to .tif)
+    a) one image, Num_images = 1
+    b) multiple images, change Num_images to N
+
+    python ../myptv/example/workflow.py .\segmentation_cam2.yml segmentation
+
+
+
 ## License
 
 `BY-SA` – [Attribution-ShareAlike](https://github.com/idleberg/Creative-Commons-Markdown/blob/master/4.0/by-sa.markdown)
