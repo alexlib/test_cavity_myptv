@@ -30,10 +30,10 @@
     N_frames: None
     camera_names: cam1, cam2, cam3, cam4
     cam_resolution: 1280, 1024
-    ROI: 0.0, 70.0, 0.0, 70.0, -25.0, 15.0
-    voxel_size: 10.0
-    max_blob_distance: 1.0
-    max_err: 0.2
+    ROI: -45.0, 45.0, -35.0, 55.0, -15.0, 15.0
+    voxel_size: 3.0
+    max_blob_distance: 2.0
+    max_err: 0.1
     save_name: particles
 
 - tracking:
@@ -53,5 +53,5 @@
     trajectory_file: smoothed_trajectories
     max_time_separation: 4
     max_distance: 0.4
-    save_name: trajecotries_stitched
+    save_name: trajectories_stitched
 

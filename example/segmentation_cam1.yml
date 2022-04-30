@@ -1,7 +1,7 @@
 - segmentation:
     Number_of_images: 5
-    images_folder: 'Images_cam2'
-    single_image_name: cam2.10000
+    images_folder: 'images'
+    single_image_name: cam2.10000.tif
     image_extension: '.tif'
     mask: 1.0
     ROI: 200, 1024, 0, 950
@@ -9,9 +9,9 @@
     threshold: 5.0
     blur_sigma: 0.4 
     local_filter: 10
-    min_xsize: 2.0
-    min_ysize: 2.0
-    min_area: 4.0
+    min_xsize: 3.0
+    min_ysize: 3.0
+    min_area: 10.0
     max_xsize: 20.0
     max_ysize: 20.0
     max_area: 400.0

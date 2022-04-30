@@ -9,9 +9,9 @@
     threshold: 5.0
     blur_sigma: 0.4 
     local_filter: 10
-    min_xsize: 2.0
-    min_ysize: 2.0
-    min_area: 4.0
+    min_xsize: 3.0
+    min_ysize: 3.0
+    min_area: 9.0
     max_xsize: 20.0
     max_ysize: 20.0
     max_area: 400.0
